@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<style>
+		*{margin: 0; padding: 0}
+		ul,li{list-style: none;float: left;}
+		ul{overflow: hidden;}
+		a{text-decoration: none;}
+		a:link,:visited{color: white;}
+
+		#header_wrap{background-color: gray;width: 1000px;height: 180px;margin: 0 auto;position: relative;}
+		#header_wrap>h1{background-color: coral;width: 100px;height: 100px;font-size: 1em;line-height: 100px;margin: 0 auto;text-align: center;position: relative; margin: 0 auto;}
+		h1,a{font-family: 'Oswald', sans-serif;}
+		/*util_menu*/
+		#util_menu{position: absolute;right: 0px; top: 10px;}
+		#util_menu>ul{}
+		#util_menu>ul>li{border-right: 2px solid coral;}
+		#util_menu>ul>li:last-child{border-right: none;}
+		#util_menu>ul>li>a{display: block;width: 100px;height: 25px;text-align: center;line-height: 25px;}
+		#util_menu>ul>li>a:hover{color: black;font-weight: bold;}
+		/*util_menu*/
+
+		/*gnb_menu*/
+		#gnb_menu{margin: 0 auto;width: 1000px;position: absolute;bottom: 0px}
+		#gnb_menu>ul{width: 100%;}
+		#gnb_menu>ul>li{width: 20%;}
+		#gnb_menu>ul>li>a{display: block;width: 200px;height: 40px;text-align: center;line-height: 40px; _background-color: gray}
+		#gnb_menu>ul>li>a:hover{background-color: coral;font-weight: bold;color: black}
+		/*gnb_menu*/
+		
+		
+		
+
+	</style>
+</head>
+<body>
+	<div id="header_wrap">
+		<h1>HOMEPAGE</h1>
+		<div id="util_menu">
+			<ul>
+				<li><a href="http://ahoy519.dothome.co.kr/signup/">signup</a></li>
+				<li><a href="http://ahoy519.dothome.co.kr/intro/">intro</a></li>
+				<li><a href="http://ahoy519.dothome.co.kr/signin/">signin</a></li>
+			</ul>
+		</div>
+		<nav id="gnb_menu">
+			<ul>
+				<li><a href="http://ahoy519.dothome.co.kr/test0/">test0</a></li>
+				<li><a href="http://ahoy519.dothome.co.kr/test1/">test1</a></li>
+				<li><a href="http://ahoy519.dothome.co.kr/test2/">test2</a></li>
+				<li><a href="http://ahoy519.dothome.co.kr/test3/">test3</a></li>
+				<li><a href="http://ahoy519.dothome.co.kr/test4/">test4</a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>

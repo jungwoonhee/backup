@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=1.0" />
+	<title>문서 제목</title>
+	<style>
+	/*reset*/
+		*{margin: 0; padding:0;}
+		ul,li{list-style: none;}
+		a{text-decoration: none;}
+		a:link, a:visited{color: black;}
+		img{display: block;}
+
+	/*header*/
+		#header{height: 45px;background: url(./images/header_background.gif);text-align: center;position: relative;}
+		#header h1{color: white;}
+		#header a,
+		#header label{
+			display: block;height: 32px;position: absolute;background: url(./images/sprites.png);text-indent: -9999px;}
+		#header>a{width: 62px;left: 5px;top: 7px;background-position: 0 0;}
+		#header>label{width: 32px;background-position: -62px 0;right: 5px;top: 7px;}
+		
+	/*toggle*/
+		#toggle_wrap{background: #363636;padding: 15px;}
+		#toggle_gnb{background: white;padding: 5px;}
+		#toggle_gnb>ul:after{content: "";display: block;clear: both;}
+		#toggle_gnb>ul>li{float: left;width: 80px;}
+		#toggle_gnb>ul>li>a{display: block;text-align: center;line-height: 22px}
+		
+		#toggle{display: none;}
+		#toggle+#wrap>#toggle_wrap{display: none;}
+		#toggle:checked+#wrap>#toggle_wrap{display: block;}
+
+	/*top*/
+		#top{background: #b42111;border-bottom: 1px solid black;}
+		#top:after{content: "";display: block;clear: both;}
+		#top>div{float: left;width: 25%;}
+		#top>div>a{display: block;line-height: 35px;text-align: center;color: white;}
+
+	/*bottom*/
+		#bottom{width: 100%;display: table;border-bottom: 1px solid black;}		
+		#bottom>div{display: table-cell;position: relative;}		
+		#bottom>div>a{display: block;height: 35px;line-height: 35px;text-align: center;}	
+		#bottom>div>a:before{content: "";border-left:1px solid black;width: 1px;height: 15px;position: absolute;bottom:10px;left: -1px;display: block; }
+
+	/*section*/
+		#main_section{padding: 10px;}
+		#section_header{padding: 20px;}
+		#section_article{padding: 10px;}
+		#main_footer{padding: 10px;border-top: 3px solid black;text-align: center;}
+	</style>
+</head>
+<body>
+	<input type="checkbox" id="toggle">
+	<div id="wrap">
+		<header id="header">
+			<a href="#" class="left">main</a>
+			<h1>Mobile</h1>
+			<label for="toggle" class="right" onclick="">Toggle</label>
+		</header>
+		<div id="toggle_wrap">
+			<div id="toggle_gnb">
+				<ul>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+				</ul>
+			</div>
+		</div>
+		<nav id="top">
+			<div><a href="#">버튼</a></div>
+			<div><a href="#">버튼</a></div>
+			<div><a href="#">버튼</a></div>
+			<div><a href="#">버튼</a></div>
+		</nav>
+		<nav id="bottom">
+			<div><a href="#">버튼</a></div>
+			<div><a href="#">버튼</a></div>
+			<div><a href="#">버튼</a></div>
+			<div><a href="#">버튼</a></div>
+			<div><a href="#">버튼</a></div>
+			<div><a href="#">버튼</a></div>
+		</nav>
+		<section id="main_section">
+			<header id="section_header">
+				<h2>Lorem ipsum.</h2>
+				<time>2018-08-02</time>
+				<article id="section_article">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit provident culpa eos doloribus perferendis vero similique recusandae fuga, possimus eaque consectetur ipsa nam aut iste architecto voluptates blanditiis quisquam praesentium quidem eligendi eius, explicabo. Architecto corrupti eum laudantium quas voluptas aliquam expedita, quos maiores, tempora in, ad officiis esse commodi facere magni assumenda! Inventore sapiente id debitis, totam, ab possimus facere voluptatibus, enim iure labore ipsum! Obcaecati quod ullam fugiat qui natus voluptatibus! Eveniet magnam nesciunt modi enim odio reiciendis sunt minus aliquam doloremque, eaque veritatis, dolor id non harum laboriosam ducimus amet dolore fugit! Culpa facere ad, laborum corporis.</p>
+					<p>Perferendis a itaque suscipit sequi vero cum repellendus saepe sed id et. A fugit consequatur deserunt. Molestiae ullam voluptates, mollitia officia in. Soluta provident placeat voluptates distinctio nam quam qui inventore quasi, eius temporibus sed voluptatibus at ipsam laborum est architecto iste necessitatibus doloribus. Neque veritatis esse vel reprehenderit nesciunt odio asperiores. Maiores labore, eos reiciendis unde atque impedit, eaque id eligendi, repellendus eum mollitia, consequuntur iure! Explicabo assumenda labore vel tempora ullam quibusdam eaque illo eos tenetur maxime necessitatibus dolor ut eius delectus saepe odio architecto quo animi inventore, at quasi veritatis repellendus perferendis nobis. Quod aliquid unde odio.</p>
+					<p>Aliquid rem, cupiditate molestiae soluta esse vel voluptatibus illo! Iusto eos voluptate, quod esse, eligendi dolorum. Sint aut velit doloribus quisquam placeat, quod vitae aperiam libero debitis vero harum tenetur, maiores, consequatur laboriosam repellendus incidunt minus repudiandae quaerat eaque vel voluptas! Quas sequi consectetur laboriosam rerum quae aspernatur, accusamus saepe quos minus vel voluptatem sint! Maiores dolore aliquid aut, enim eaque eum, dolorem, explicabo itaque dolorum tenetur cum, distinctio! A, deserunt explicabo earum sapiente minus eos cupiditate sequi iusto architecto, totam sit accusantium quas tempora nesciunt velit corporis minima necessitatibus accusamus beatae consequatur, voluptatibus autem! Laudantium vitae, consequuntur sed iste?</p>
+				</article>
+			</header>
+		</section>
+		<footer id="main_footer">
+			<h3>Lorem ipsum dolor.</h3>
+			<address>website layout basic</address>
+		</footer>
+	</div>
+</body>
+</html>
